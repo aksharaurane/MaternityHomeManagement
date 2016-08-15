@@ -1,0 +1,106 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Indoor Paper</h4></center></div><br>
+<%= form_for :article do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Bill_No %>
+    <%= f.text_field :Bill_No %>
+</div>
+<div class="col-md-6">
+<%= f.label :Case_No %>
+    <%= f.text_field :Case_No %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Patient_Name  %>
+    <%= f.text_field :Patient_Name %>
+</div>
+<div class="col-md-6">
+<%= f.label :Age %>
+    <%= f.text_field:Age %>
+</div>
+</div> <h4>Address</h4>
+<div class="row">
+<div class="col-md-12">
+<%= f.text_area:Address %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Diagnosis  %>
+    <%= f.text_area:Diagnosis %>
+</div>
+<div class="col-md-6">
+<%= f.label :Treatment %>
+    <%= f.text_area:Treatment %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Surgeon_Name  %>
+    <%= f.text_field:Surgeon_Name %>
+</div>
+<div class="col-md-6">
+<%= f.label :Anansthesia_Surgeon%>
+    <%= f.text_field:Anansthesia_Surgeon %>
+</div>
+</div>
+  <div class="row">
+<div class="col-md-6">
+<%= f.label :Delivery  %>
+    <%= f.text_field:Delivery %>
+</div>
+<div class="col-md-6">
+    <%= f.text_area:Comment1 %>
+</div>
+</div> 
+ <div class="row">
+<div class="col-md-6">
+<%= f.label :Anansthesia  %>
+    <%= f.text_field:Anansthesia %>
+</div>
+<div class="col-md-6">
+    <%= f.text_area:Comment2 %>
+</div>
+</div> 
+<h1>Baby's Information</h1>
+ <div class="row">
+<div class="col-md-6">
+<%= f.label :Birth_Date  %>
+    <%= f.text_field:Birth_Date %>
+</div>
+<div class="col-md-6">
+<%= f.label :Birth_Time  %>
+    <%= f.text_field:Birth_Time %>
+</div>
+</div>
+ <div class="row">
+<div class="col-md-6">
+<%= f.label :Weight  %>
+    <%= f.text_field:Weight %>
+</div>
+<div class="col-md-6">
+<%= f.label :Status  %>
+    <%= f.text_field:Status %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Asphxia  %>
+    <%= f.text_field:Asphxia %>
+</div>
+<div class="col-md-6">
+<%= f.label :Gender  %>
+    <%= f.text_field:Gender %>
+</div>
+</div>
+    <center><%= f.submit %></center>
+  </div>
+<% end %>
+  
+ 
+</div>

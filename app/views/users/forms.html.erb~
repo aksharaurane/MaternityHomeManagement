@@ -1,0 +1,10 @@
+<h1>Welcome...</h1>
+ <center><%= link_to "Indoor Sheet", indoorsheets_path, class: "btn btn-lg btn-primary" %><br><br>
+
+<%= link_to "Indoor Paper", indoorpaper_path, class: "btn btn-lg btn-primary" %><br><br>
+<%= link_to "OPD Case Paper", opdcasepaper_path, class: "btn btn-lg btn-primary" %><br><br>
+
+<%= link_to "Doctor", doctor_path, class: "btn btn-lg btn-primary" %><br><br>
+<%= link_to "Search", search_path, class: "btn btn-lg btn-primary" %><br><br>
+ </center>
+

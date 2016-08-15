@@ -1,0 +1,129 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>OPD Case Paper</h4></center></div><br>
+<%= form_for :opd do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :No %>
+    <%= f.text_field :No %>
+</div>
+<div class="col-md-6">
+<%= f.label :Date  %>
+    <%= f.date_select :Date %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Name  %>
+    <%= f.text_field:Name %>
+</div>
+<div class="col-md-6">
+<%= f.label :Age %>
+    <%= f.text_field:Age %>
+</div>
+</div> <div class="row">
+<div class="col-md-6">
+<%= f.label :Residence  %>
+    <%= f.text_area:Residence %>
+</div>
+<div class="col-md-6">
+<%= f.label :Present_Complaints %>
+    <%= f.text_area:Present_Complaints %>
+</div>
+</div>
+ 
+
+<div class="row">
+<div class="col-md-4">
+<%= f.label :PMC  %>
+    <%= f.text_area:PMC %>
+</div>
+<div class="col-md-4">
+<%= f.label :Pr_Mc %>
+    <%= f.text_field:Pr_Mc %>
+</div>
+<div class="col-md-4">
+<%= f.label :LMP %>
+    <%= f.text_field:LMP %>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-12">
+<%= f.label :OH  %>
+    <%= f.text_field:OH %>
+</div>
+</div>
+
+<h4>Past H/O</h4>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Family_HO %>
+    <%= f.text_area:Family_HO %>
+</div>
+<div class="col-md-6">
+<%= f.label :Personal_HO %>
+    <%= f.text_area:Personal_HO %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<%= f.label :Clinical_Exam  %>
+    <%= f.text_area:Clinical_Exam %>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4">
+<%= f.label :HB  %>
+    <%= f.text_field:HB %>
+</div>
+<div class="col-md-4">
+<%= f.label :CBC %>
+    <%= f.text_field:CBC %>
+</div>
+<div class="col-md-4">
+<%= f.label :B1_Gr %>
+    <%= f.text_field:B1_Gr %>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4">
+<%= f.label :HBS_Ag  %>
+    <%= f.text_field:HBS_Ag %>
+</div>
+<div class="col-md-4">
+<%= f.label :HIV %>
+    <%= f.text_field:HIV %>
+</div>
+<div class="col-md-4">
+<%= f.label :INJ_TT_1st_2nd %>
+    <%= f.text_field:INJ_TT_1st_2nd %>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :LMP %>
+    <%= f.text_field:LMP %>
+</div>
+<div class="col-md-6">
+<%= f.label :EDD %>
+    <%= f.text_field:EDD %>
+</div>
+</div>
+    <center><%= f.submit %></center>
+<% end %>
+  
+ 
+</div>

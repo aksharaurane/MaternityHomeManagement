@@ -87,3 +87,12 @@ margin-right: auto;
 footer nav {
 float: none;
 }
+label
+{
+	float: left;
+
+}
+input
+{
+	float: right;
+}

@@ -9,6 +9,11 @@ $gray-medium-light: #eaeaea;
 }
 /* universal */
 
+.sss
+{
+  width:50%;
+  height:50%; 
+}
 body {
 	background: #778899;
     padding-top: 60px;
@@ -189,4 +194,12 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+
+
+.img
+{
+  width: 200%;
+  height:200%;
 }

@@ -1,0 +1,58 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Indoor Cont Sheet</h4></center></div><br>
+<%= form_for :article do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Case_No %>
+    <%= f.text_field :Case_No %>
+</div>
+<div class="col-md-6">
+<%= f.label :Patient_Name  %>
+    <%= f.text_field :Patient_Name %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Date  %>
+    <%= f.text_field:Date %>
+</div>
+<div class="col-md-6">
+<%= f.label :Time %>
+    <%= f.text_field:Time %>
+</div>
+</div> <h4>Doctors Notes and Orders</h4>
+<div class="row">
+<div class="col-md-12">
+<%= f.text_area:Doctors_Notes_and_Orders %>
+</div>
+</div>
+ <h4>Nurse Record</h4><br>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Time  %>
+    <%= f.text_field:N_Time %>
+</div>
+<div class="col-md-6">
+<%= f.label :TPR_B_P %>
+    <%= f.text_field:TPR_B_P %>
+</div>
+
+</div>
+<div class="col-md-6">
+<%= f.label :Cpmment_Here %>
+
+  <%= f.text_area:comment %>
+</div>
+</div>
+
+<div>
+   
+    <center><%= f.submit %></center>
+  </div>
+<% end %>
+  
+ 
+</div>

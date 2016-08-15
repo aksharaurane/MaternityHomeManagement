@@ -1,0 +1,97 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Indoor Paper</h4></center></div><br>
+<%= form_for :indoorpaper do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Bill_No %>
+    <%= f.text_field :Bill_No ,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Case_No %>
+    <%= f.text_field :Case_No,class: 'form-control' %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Patient_Name  %>
+    <%= f.text_field :Patient_Name,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Age %>
+    <%= f.text_field:Age,class: 'form-control' %>
+</div>
+
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Diagnosis  %>
+    <%= f.text_area:Diagnosis,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Treatment %>
+    <%= f.text_area:Treatment,class: 'form-control' %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Surgeon_Name  %>
+    <%= f.text_field:Surgeon_Name,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Anansthesia_Surgeon%>
+    <%= f.text_field:Anansthesia_Surgeon,class: 'form-control' %>
+</div>
+</div>
+  <div class="row">
+<div class="col-md-6">
+
+</div>
+<div class="col-md-6">
+  
+</div>
+</div> 
+ <div class="row">
+<div class="col-md-6">
+
+</div>
+<div class="col-md-6">
+   
+</div>
+</div> 
+<h1>Baby's Information</h1>
+ <div class="row">
+<div class="col-md-6">
+
+</div>
+<div class="col-md-6">
+
+</div>
+</div>
+ <div class="row">
+<div class="col-md-6">
+<%= f.label :Weight  %>
+    <%= f.text_field:Weight ,class: 'form-control'%>
+</div>
+<div class="col-md-6">
+<%= f.label :Status  %>
+    <%= f.text_field:Status ,class: 'form-control'%>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6"> 
+<%= f.label :Asphxia  %>
+    <%= f.text_field:Asphxia,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Gender  %>
+    <%= f.select :Gender, ['M','F'], class: 'form-control' %>
+</div>
+</div>
+    <center><%= f.submit %></center>
+  </div>
+<% end %>
+  
+ 
+</div>

@@ -76,5 +76,8 @@ DemoApp::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+  # Force all access to the app over SSL, use Strict-Transport-Security,
+  # and use secure cookies.
+  config.force_ssl = true
   config.log_formatter = ::Logger::Formatter.new
 end

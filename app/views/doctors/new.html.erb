@@ -1,0 +1,78 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Doctor Registration</h4></center></div><br>
+<%= form_for :doctor do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Name %>
+    <%= f.text_field :Name ,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Doctor_ID  %>
+    <%= f.text_field :Doctor_ID ,class: 'form-control' %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Age %>
+    <%= f.text_field:Age ,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Gender %>
+    <%= f.select :Gender, ['M','F'], include_blank: true  ,class: 'form-control' %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Birth_date %>
+<%= f.date_select :Birth_date ,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Address  %>
+    <%= f.text_area:Address ,class: 'form-control' %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Occupation %>
+    <%= f.text_field:Occupation  %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :User_Name  %>
+    <%= f.text_field:User_Name ,class: 'form-control'%>
+</div>
+
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Password  %>
+    <%= f.password_field:Password,class: 'form-control' %>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Email_ID  %>
+    <%= f.email_field :Email_ID ,class: 'form-control'%>
+</div>
+
+</div>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Phone_No  %>
+    <%= f.telephone_field:Phone_No ,class: 'form-control'%>
+</div>
+
+</div>
+
+    <center><%= f.submit %></center>
+  </div>
+<% end %>
+  
+ 
+</div>

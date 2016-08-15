@@ -1,0 +1,60 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Indoor Cont Sheet</h4></center></div><br>
+<%= form_for :indoorsheet do |f| %>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Case_No %>
+    <%= f.text_field :Case_No,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :Patient_Name  %>
+    <%= f.text_field :Patient_Name,class: 'form-control' %>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Date  %>
+<%= f.date_select :Date,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+
+
+<%= f.label :Time %>
+    <%= f.text_field :Time ,class: 'form-control' %>
+</div>
+</div> <h4>Doctors Notes and Orders</h4>
+<div class="row">
+<div class="col-md-12">
+<%= f.text_area:Doctors_Notes_and_Orders ,class: 'form-control' %>
+</div>
+</div>
+ <h4>Nurse Record</h4><br>
+<div class="row">
+<div class="col-md-6">
+<%= f.label :Time  %>
+    <%= f.time_select:Time ,class: 'form-control' %>
+</div>
+<div class="col-md-6">
+<%= f.label :TPR_B_P %>
+    <%= f.text_field:TPR_B_P ,class: 'form-control' %>
+</div>
+
+</div>
+<div class="col-md-6">
+<%= f.label :Comment_Here %>
+
+  <%= f.text_area:Cpmment_Here ,class: 'form-control' %>
+</div>
+</div>
+
+<div>
+   
+    <center><%= f.submit %></center>
+  </div>
+<% end %>
+  
+ 
+</div>

@@ -1,0 +1,91 @@
+
+<div><center><h1>Nitave Hospital</h1></center></div>
+<center><div><h4>Search</h4></center></div><br>
+<%= form_for :article do |f| %>
+<div class="container">
+
+Search From CasePaper:
+<div class="row">
+<div class="col-md-4">
+<%= f.label :Name %>
+    <%= f.text_field :CName %>
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+<%= link_to "Search", '#', class: "btn btn-lg btn-primary" %>
+
+</div>
+</div><br><br>
+
+
+Search From Indoor Paper:
+<div class="row">
+<div class="col-md-4">
+<%= f.label :Name %>
+    <%= f.text_field :IPName %>
+</div>
+<div class="col-md-4">
+<%= f.label :Case_No%>
+    <%= f.text_field :IPCase_No %>
+</div>
+<div class="col-md-4">
+<%= link_to "Search", '#', class: "btn btn-lg btn-primary" %>
+
+</div>
+</div><br><br>
+
+
+Search From Indoor Sheet:
+<div class="row">
+<div class="col-md-4">
+<%= f.label :Name %>
+    <%= f.text_field :ISName %>
+</div>
+<div class="col-md-4">
+<%= f.label :Case_No%>
+    <%= f.text_field :ISCase_No %>
+</div>
+<div class="col-md-4">
+<%= link_to "Search", '#', class: "btn btn-lg btn-primary" %>
+
+</div>
+</div><br><br>
+
+
+
+Search Acording to Delivery Type:
+<div class="row">
+<div class="col-md-4">
+<%= f.label :Type %>
+    <%= f.text_field :DType %>
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+<%= link_to "Search", '#', class: "btn btn-lg btn-primary" %>
+
+</div>
+</div><br><br>
+
+
+Search Acording to Date:
+<div class="row">
+<div class="col-md-4">
+<%= f.label :Date%>
+    <%= f.text_field :Date %>
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+<%= link_to "Search", '#', class: "btn btn-lg btn-primary" %>
+
+</div>
+</div><br><br>
+
+<% end %>
+
+</div>

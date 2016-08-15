@@ -1,10 +1,32 @@
 DemoApp::Application.routes.draw do
+  get 'sessions/new'
+  get 'sessions/new'
   get 'users/new'
-
   root 'page#index'
   get 'page_about_us'   => 'page#page_about_us'
   get 'contact' => 'page#contact'
   get 'signup'  => 'users#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  get 'forms'  => 'users#forms'
+  get 'indoorsheet'  => 'users#indoorsheet'
+  get 'indoorpaper'  => 'users#indoorpaper'
+  get 'opdcasepaper'  => 'users#opdcasepaper'
+  get 'doctors'  => 'page#doctors'
+  get 'doctor' => 'users#doctor'
+  get 'search'  => 'users#search'
+  get 'tips'  => 'page#tips'
+  get 'fitness'  => 'page#fitness'
+  get 'beauty'  => 'page#beauty'
+  get 'diseases_and_conditions'  => 'page#diseases_and_conditions'
+  get 'pregnancy'  => 'page#pregnancy'
+  get 'parenting'  => 'page#parenting'
+    get 'weight_loss'  => 'page#weight_loss'
+    get 'yoga'  => 'page#yoga'
+    get 'diet'  => 'page#diet'
+
+
   resources :users
 
 

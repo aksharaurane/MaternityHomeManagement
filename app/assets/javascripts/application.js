@@ -11,5 +11,7 @@
 // about supported directives.
 //= require bootstrap-sass/assets/javascripts/bootstrap-sprockets
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+//= require owl.carousel

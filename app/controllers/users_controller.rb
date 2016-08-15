@@ -1,16 +1,19 @@
 class UsersController < ApplicationController
+
   def show
     @user = User.find(params[:id])
   end
+
   def new
-  	 @user = User.new
+    @user = User.new
   end
-    def create
+
+  def create
     @user = User.new(user_params)
     if @user.save
-    	flash[:success] = "Welcome to the WCESQUARE!"
-    	redirect_to @user
-      # Handle a successful save.
+      log_in @user
+      flash[:success] = "Welcome to the Sample App!"
+      redirect_to @user
     else
       render 'new'
     end
@@ -21,5 +24,19 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
+    end
+
+    def forms
+    end
+
+    def indoorsheet
+    end
+def indoorpaper
+    end
+     def opdcasepaper
+    end
+    def doctor
+    end
+    def search
     end
 end
